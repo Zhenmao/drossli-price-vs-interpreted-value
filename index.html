@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price vs. Interpreted Value</title>
+    <link rel="stylesheet" href="css/price-vs-interpreted-value.css" />
+    <style>
+      /* For this testing page only */
+      html {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      .wrapper {
+        margin: 3rem auto;
+        width: 80%;
+        min-width: 320px;
+        max-width: 960px;
+      }
+      .wrapper > * + * {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h5>Original Data ~40,000 points</h5>
+      <div id="price-vs-interpreted-value-original"></div>
+      <h5>Reduced Data ~4,000 points</h5>
+      <div id="price-vs-interpreted-value-reduced"></div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
